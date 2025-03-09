@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "295a9a7a-9baf-4fe0-b11a-491d7f034680",
+		"name": "LMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13314693"
+	},
+	"item": [
+		{
+			"name": "course list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ccc7503570f3dc0:f739eb2ea06d000",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_course_list",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_course_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ccc7503570f3dc0:f739eb2ea06d000",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_course_details?course_id=test",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_course_details"
+					],
+					"query": [
+						{
+							"key": "course_id",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ccc7503570f3dc0:f739eb2ea06d000",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_course_category_data",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_course_category_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blog list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ccc7503570f3dc0:f739eb2ea06d000",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_blog_list",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_blog_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blog category list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token ccc7503570f3dc0:f739eb2ea06d000",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_blog_categories",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_blog_categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blog details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_blog_details?blog_id=test",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_blog_details"
+					],
+					"query": [
+						{
+							"key": "blog_id",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_blog_tags",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_blog_tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gallery list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_gallery_list",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_gallery_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/method/lms_api.api.get_gallery_with_images?gallery_id=Galler-007",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"method",
+						"lms_api.api.get_gallery_with_images"
+					],
+					"query": [
+						{
+							"key": "gallery_id",
+							"value": "Galler-007"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

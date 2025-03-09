@@ -1,0 +1,69 @@
+//course-filter-tab
+.course-filter-tab {
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--black-6);
+    }
+    .nav-tabs {
+        border: 0;
+        .nav-link {
+            width: 40px;
+            height: 40px;   
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            position: relative;
+            margin: 0 4px;
+            border: 0;
+            padding: 0;
+            &:after {
+                content: '';
+                position: absolute;
+                right: -2px;
+                bottom: -2px;
+                height: 100%;
+                width: 100%;
+                background-color: var(--black-6);
+                border-radius: 10px;
+                transition: 0.4s;
+                visibility: hidden;
+                opacity: 0;
+                z-index: 1;
+            }
+            span {
+                width: 40px;
+                height: 40px;   
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                position: relative;
+                position: relative;
+                z-index: 2;
+                border: 1px solid var(--black-6);
+                background: #FFF;
+            }
+            &.active {
+                span {
+                    background: #DFFFE2;
+                }
+                &:after {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.course-filter-tab-content {
+    .tab-pane {
+        &.active {
+            background-color: transparent;
+        }
+    }
+}

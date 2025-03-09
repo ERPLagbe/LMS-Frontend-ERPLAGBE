@@ -1,0 +1,90 @@
+/*----------------------------------------*/
+/*  HEADER 5 CSS START
+/*----------------------------------------*/
+//header style 5
+.header__area.header-style-5 {
+    .header__wrapper {
+        background-color: transparent;
+        &:after {
+            display: none;
+        }
+    }
+    .header__select-wrap {
+        background-color: transparent;
+        border-radius: 50px; 
+        border: 1px solid #9C9C9C;
+        color: var(--gray);
+        .header__circel-icon {
+            left: 0;
+            top: 0;
+            border: 0 !important;
+        }
+    }
+    .header__logo {
+        display: flex;
+        gap: 30px;
+    }
+    .header__social {
+        display: flex;
+        gap: 20px;
+        position: relative; 
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    .header__main {
+        @media #{$lg} {
+            display: none;
+        }
+    }
+    .main-menu > .menu-item > a {
+        line-height: 95px;
+        display: inline-block;
+    }
+    .menu-item .menu-item a {
+        line-height: 1;
+    }
+    .menu-item:hover > a {
+        color: var(--red-5);
+    }
+    .has-megamenu .menu-left-bar-inner .nav .nav-link.active span {
+        color: var(--red-5);
+    }
+    .has-megamenu .demo-list-wrap .single-demo-list:hover h4 a {
+        color: var(--red-5);
+    }
+    .header__select-wrap .header__select li::before {
+        background-color: var(--red-5);
+    }
+    .header__btn {
+        font-family: var(--font-imbue);
+    }
+    .btn-signUp {
+        background-color: var(--red-5);
+        border-radius: 12px;
+        padding: 13px 28px 12px 28px;
+        color: #301903;
+        font-weight: 900;
+        margin-left: 20px;
+    }
+    .header__shopicon {
+      position: relative; 
+    } 
+    #search_close {
+        top: -10px;
+    }
+    .header__notification {
+        width: 14px;
+        height: 14px; 
+        background-color: var(--red-5);
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        font-size: 6px;
+        justify-content: center;
+        position: absolute;
+        top: -5px;
+        right: -7px;
+    } 
+}

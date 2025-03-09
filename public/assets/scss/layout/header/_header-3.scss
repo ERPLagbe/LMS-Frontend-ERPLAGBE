@@ -1,0 +1,123 @@
+/*----------------------------------------*/
+/*  HEADER 3 CSS START
+/*----------------------------------------*/
+.header__area.header-style-3 {
+  padding-top: 15px;
+  .header__wrapper {
+    background-color: transparent;
+    max-width: 1462px;
+    gap: 15px;
+    &:after {
+      display: none;
+    }
+  }
+
+  //humbargar style
+  .header__humbargar {
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    padding: 23px 25px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    .header__menu-text {
+      color: #160b30;
+      font-family: var(--font-epilogue);
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+
+  //category dropdown style
+  .header__select-wrap {
+    background-color: #f6f6f6;
+    padding: 13px 15px;
+    border-radius: 20px;
+  }
+
+  //menu style
+  .header__main {
+    background-color: #f6f6f6;
+    padding: 0 45px;
+    border-radius: 20px;
+  }
+  .main-menu > .menu-item > a {
+    line-height: 75px;
+  }
+  .header__logo {
+    @media #{$lg} {
+      padding: 0px 20px;
+    }
+  }
+  .menu-item:hover > a {
+    color: var(--blue);
+  }
+  .has-megamenu .menu-left-bar-inner .nav .nav-link.active span {
+    color: var(--blue);
+  }
+  .has-megamenu .demo-list-wrap .single-demo-list:hover h4 a {
+    color: var(--blue);
+  }
+  .header__select-wrap .header__select li::before {
+    background-color: var(--blue);
+  }
+
+  //right bar info style
+  .header__right-info {
+    display: flex;
+    gap: 32px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    padding: 12px 19px;
+    @media #{$lg} {
+      padding: 0;
+    }
+  }
+  .btn-login {
+    color: #160b30;
+    font-size: 16px;
+    font-weight: 700;
+    transition: var(--transition);
+    &:hover {
+      color: var(--green-4);
+    }
+  }
+  .btn-signUp {
+    padding: 14px 20px 13px;
+    border-radius: 15px;
+    background: #47f58d;
+    &:hover {
+      background-color: #f5c447;
+      box-shadow: none;
+    }
+  }
+  .open-search {
+    top: 94px;
+  }
+  #search_close {
+    top: -11px;
+  }
+  .search-form {
+    background-color: var(--gray-2);
+  }
+  .header__shopIcon {
+    position: relative;
+  }
+  .header__notication {
+    width: 14px;
+    height: 14px;
+    background-color: var(--blue);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 6px;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+  }
+}

@@ -1,0 +1,116 @@
+/*----------------------------------------*/
+/*  HEADER 2 CSS START
+/*----------------------------------------*/
+.header__area.header-style-2 {
+  position: relative;
+  border-radius: 0px 0px 40px 40px;
+  border-bottom: 1px solid var(--black-6);
+  z-index: 99;
+  padding: 0 60px;
+  @media #{$xxl} {
+    padding: 0 15px;
+  }
+  @media #{$sm} {
+    padding: 0 15px;
+  }
+  .header__wrapper {
+    background-color: transparent;
+    max-width: 100%;
+    &:after {
+      display: none;
+    }
+  }
+
+  //logo style
+  .header__logo-2 {
+    display: flex;
+    gap: 30px;
+  }
+
+  //header cadegory dropdown
+  .header__select-wrap {
+    .header__circel-icon {
+      color: var(--black-6);
+      border: 1px solid var(--black-6) !important;
+      background-image: url(/assets/imgs/icon/arrow-down-black.svg);
+    }
+  }
+
+  //menu item style
+  .menu-item {
+    a {
+      color: var(--black-6);
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .main-menu > .menu-item > a {
+    line-height: 95px;
+  }
+  .menu-item .menu-item a {
+    line-height: 1;
+  }
+
+  //header-right-style
+  .header__right-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+  .header__social-2 {
+    display: flex;
+    gap: 25px;
+
+    @media #{$lg} {
+      display: none;
+    }
+
+    i {
+      font-size: 18px;
+      color: var(--black-2);
+    }
+  }
+  .header__btn-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media #{$lg} {
+      display: none;
+    }
+  }
+  .btn-signUp {
+    font-size: 16px;
+    color: var(--black-6);
+    padding: 14px 29px 14px 28px;
+    font-weight: 700;
+    border: 2px solid var(--black-6);
+    background-color: #33a890;
+    display: inline-block;
+    transition: var(--transition);
+    border-radius: 100px;
+    @media #{$xl2} {
+      font-size: 14px;
+    }
+  }
+  .header__shopicon-2 {
+    position: relative;
+  }
+  .header__notication-2 {
+    width: 14px;
+    height: 14px;
+    background-color: #474ae0;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 6px;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+  }
+}

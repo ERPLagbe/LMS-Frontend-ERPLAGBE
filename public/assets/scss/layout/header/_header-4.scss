@@ -1,0 +1,82 @@
+/*----------------------------------------*/
+/*  HEADER 4 CSS START
+/*----------------------------------------*/
+.header__area.header-style-4 {
+  .header__wrapper {
+    background-color: transparent;
+    &:after {
+      display: none;
+    }
+  }
+  .main-menu > .menu-item > a {
+    line-height: 95px;
+    display: inline-block;
+  }
+  .menu-item .menu-item a {
+    line-height: 1;
+  }
+  //menu style
+  .main-menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .menu-item.dropdown-icon a::before {
+    right: -45px;
+  }
+  .menu-item a::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -28px;
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-image: url("/assets/imgs/icon/star-gray.svg");
+    background-repeat: no-repeat;
+  }
+  .has-dropdown a:before {
+    display: none;
+  }
+  .menu-item:hover > a {
+    color: var(--red-4);
+  }
+  .has-megamenu .menu-left-bar-inner .nav .nav-link.active span {
+    color: var(--red-4);
+  }
+  .has-megamenu .demo-list-wrap .single-demo-list:hover h4 a {
+    color: var(--red-4);
+  }
+  .header__select-wrap .header__select li::before {
+    background-color: var(--red-4);
+  }
+  .btn-signUp {
+    background-color: #1745e5;
+    border-radius: 15px;
+    padding: 14px 20px 14px;
+  }
+  .btn-signUp:hover {
+    background-color: var(--red-4);
+    box-shadow: none;
+  }
+  #search_close {
+    top: -11px;
+  }
+  .header__shopicon-4 {
+    position: relative;
+  }
+  .header__notification-4 {
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 6px;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+  }
+}

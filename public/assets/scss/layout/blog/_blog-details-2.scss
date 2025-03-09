@@ -1,0 +1,106 @@
+.blog-details-top-2 {
+    .blog-meta {
+        display: flex;
+        z-index: 2222;
+        position: relative;
+        margin-bottom: 20px;
+        li {
+            border-radius: 40px;
+            border: 1px solid #1F1F1F;
+            background: #FFF6DF;
+            padding: 7px 15px 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #3D2F0D;
+            svg {
+                margin-right: 5px;
+            }
+            + li {
+                margin-left: 5px;
+            }
+        }
+    }
+    .title {
+        margin-bottom: 20px;
+        font-size: 60px;
+        color: var(--black-6);
+        font-weight: 700;
+    }
+    .author {
+        display: flex;
+        align-items: center;
+        img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+        .details {
+            p {
+                font-size: 14px;
+                color: var(--gray);
+                margin-bottom: 5px;
+            }
+            h6 {
+                font-weight: 600;
+                color: var(--black-6);
+            }
+        }
+    }
+    .thumb {
+        mask-size: 99% 100%;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        img {
+            transition: 0.7s;
+        }
+    }
+}
+
+.blog-details-area-2 {
+    .has-dropcap {
+        &:first-letter {
+            font-size: 30px;
+            line-height: 1;
+            color: var(--black-6);
+            font-weight: 700;
+        }
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--black-6);
+        margin-bottom: 20px;
+    }
+    .postDetails__quote {
+        background-color: #F2BDA3;
+        h4 {
+            margin-bottom: 3px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.single-list-inner {
+    margin-bottom: 20px;
+    li {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: var(--black-6);
+        margin-bottom: 6px;
+        svg {
+            margin-right: 9px;
+            margin-top: -3px;
+        }
+    }
+}

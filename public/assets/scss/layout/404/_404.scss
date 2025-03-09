@@ -1,0 +1,26 @@
+.error__area-2 {
+    .error__img {
+        margin-bottom: 70px;
+        @media #{$lg}{
+            margin-bottom: 40px;
+        }
+        @media #{$sm}{
+            margin-bottom: 30px;
+        }
+    }
+    .error__text {
+        font-size: 30px;
+        font-weight: 500;
+        color: var(--black-6);
+        max-width: 480px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        @media #{$sm}{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+    .btn-service-2 {
+        padding: 19px 42px 17px 42px;
+    }
+}

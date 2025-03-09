@@ -1,0 +1,75 @@
+.gallery {
+  &__album-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); // Default for large screens
+    gap: 20px;
+    margin: 0 0 60px 0;
+
+    // Media queries for responsiveness
+    @media (max-width: 1200px) { // Medium screens (e.g., tablets in landscape)
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) { // Small screens (e.g., tablets in portrait, large phones)
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) { // Very small screens (e.g., mobile phones)
+      grid-template-columns: 1fr; // One column on small screens
+    }
+  }
+
+  &__album {
+    position: relative;
+    padding: 20px;
+    transform: rotate(-4deg);
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%; // Responsive width for grid cells
+    max-width: 300px; // Maximum width limit for the album
+    box-sizing: border-box;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); // Shadow for depth
+
+    // Stacking effect for the album
+    &:before,
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border: 10px solid #fff;
+      left: 0;
+      top: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    &:before {
+      transform: rotate(4deg); // Rotating the first pseudo-element for the stack effect
+      z-index: -1;
+    }
+
+    &:after {
+      transform: rotate(-4deg); // Rotating the second pseudo-element for the stack effect
+      z-index: -2;
+    }
+
+    // Optional hover effect (if you want to keep scaling on hover)
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    h3 {
+      margin-top: 10px;
+    }
+  }
+}

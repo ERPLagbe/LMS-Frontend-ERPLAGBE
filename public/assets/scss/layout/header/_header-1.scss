@@ -1,0 +1,19 @@
+/*----------------------------------------*/
+/*  1. HEADER 1 CSS START
+/*----------------------------------------*/
+.header__area.header-style-1 {
+    .main-menu > .menu-item > a {
+        line-height: 95px;
+    }
+    .menu-item .menu-item a {
+        line-height: 1;
+    }
+    .menu-item:hover .has-dropdown .has-dropdown {
+        top: 0;
+    }
+
+    //right infor style
+    .header__shopicon {
+        margin-right: 50px;
+    }
+}

@@ -1,0 +1,100 @@
+//breadcrumb__area-2
+.breadcrumb__area-2 {
+    background-color: #FFF5E1;
+    margin-top: -110px;
+    padding-top: 240px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 100px 100px;
+    @media #{$sm}{
+        padding-top: 180px;
+    }
+    .breadcrumb-title {
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--black-6);
+        margin-bottom: 15px;
+        @media #{$sm}{
+            font-size: 35px;
+        }
+    }
+    .breadcrumb-list {
+        li {
+            position: relative;
+            a {
+                color: var(--gray);
+            }
+            + li {
+                margin-left: 18px;
+                padding-left: 8px;
+                &:after {
+                    position: absolute;
+                    left: -12px;
+                    top: 0;
+                    content: "\e13a";
+           
+                }
+            }
+        }
+    }
+
+    //shape image
+    .shape-1 {
+        left: -50px;
+        bottom: 10px;
+        @media #{$lg}{
+            max-width: 50px;
+            left: 0px;
+        }
+    }
+    .shape-2 {
+        left: 250px;
+        top: 160px;
+        @media #{$lg}{
+            left: 80px;
+            max-width: 30px;
+        }
+        @media #{$sm}{
+            display: none;
+        }
+    }
+    .shape-3 {
+        left: 510px;
+        bottom: 70px;
+        @media #{$lg}{
+            left: 150px;
+            max-width: 20px;
+        }
+        @media #{$sm}{
+            display: none;
+        }
+    }
+    .shape-4 {
+        right: 500px;
+        top: 160px;
+        @media #{$lg}{
+            right: 230px;
+            max-width: 20px;
+        }
+        @media #{$sm}{
+            display: none;
+        }
+    }
+    .shape-5 {
+        right: 0;
+        top: 120px;
+        @media #{$lg}{
+            max-width: 50px;
+        }
+    }
+    .shape-6 {
+        right: 200px;
+        bottom: 0;
+        @media #{$lg}{
+            max-width: 50px;
+        }
+        @media #{$sm}{
+            right: 80px;
+        }
+    }
+}
